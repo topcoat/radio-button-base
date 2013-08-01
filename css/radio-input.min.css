@@ -1,0 +1,1 @@
+input[type=radio]{position:absolute;left:-9999px}input[type=radio]:disabled+label{opacity:.3;cursor:default;pointer-events:none}.radio{position:relative;display:inline-block;vertical-align:top}.radio__label{cursor:default;user-select:none}.radio__label:before,.radio__label:after{content:'';position:absolute}

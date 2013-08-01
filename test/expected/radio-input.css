@@ -12,9 +12,26 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 */
-
-.radio-input-base {
-  outline: none;
-  margin: 5px;
-  box-sizing: border-box;
+input[type="radio"] {
+  position: absolute;
+  left: -9999px;
+}
+input[type="radio"]:disabled + label {
+  opacity: 0.3;
+  cursor: default;
+  pointer-events: none;
+}
+.radio {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+.radio__label {
+  cursor: default;
+  user-select: none;
+}
+.radio__label:before,
+.radio__label:after {
+  content: '';
+  position: absolute;
 }
