@@ -15,3 +15,20 @@
 * limitations under the License.
 *
 */
+
+/*global require, describe, it*/
+
+
+var grunt = require('grunt'),
+    assert = require('assert');
+
+describe('Radio Button Base', function() {
+    'use strict';
+
+    it('should create expected css file', function() {
+        var actual = grunt.file.read('css/radio-button.css');
+        var expected = grunt.file.read('test/expected/radio-button.css');
+        assert.equal(actual, expected, 'should generate correct css');
+    });
+
+});

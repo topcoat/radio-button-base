@@ -15,3 +15,25 @@
 * limitations under the License.
 *
 */
+@import utils
+
+input[type="radio"]
+  hide-input()
+
+.radio-button
+  reset-box-model()
+  inline-block()
+  reset-cursor()
+
+.radio-button__label
+  inline-block()
+  reset-cursor()
+
+.radio-button:before,
+.radio-button:after
+  content ''
+  position absolute
+
+.radio-button:before
+  reset-box-model()
+
