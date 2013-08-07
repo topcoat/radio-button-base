@@ -33,6 +33,12 @@ input[type="radio"]
 .radio-button:after
   content ''
   position absolute
+  border-radius 100%
+
+.radio-button:after
+  top 50%
+  left 50%
+  transform translate(-50%, -50%)
 
 .radio-button:before
   reset-box-model()
